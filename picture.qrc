@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>picture/background color.png</file>
+        <file>picture/block.svg</file>
+        <file>picture/circle.svg</file>
+        <file>picture/cross.svg</file>
+        <file>picture/hexagon.svg</file>
+        <file>picture/rectangle.svg</file>
+        <file>picture/slot.svg</file>
+        <file>picture/trapezoid.svg</file>
+        <file>picture/triangle.svg</file>
+    </qresource>
+</RCC>
