@@ -35,7 +35,7 @@ QGraphicsLineItem *DashDotDotLine(QPointF a,QPointF b,QString color,qreal width)
     line->setPen(pen);
     return line;
 }
-QGraphicsPixmapItem* P_background(QPointF position,QSize size,QPointF offset){
+QGraphicsItem* P_background(QPointF position,QSize size,QPointF offset){
     QGraphicsPixmapItem *picture=new QGraphicsPixmapItem;
     picture->setPixmap(QPixmap(":/picture/background color").scaled(size));
     picture->setOffset(offset);

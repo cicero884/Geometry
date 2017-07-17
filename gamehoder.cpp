@@ -13,6 +13,7 @@ QVector<unit*> army;
 QVector<unit*> boss;
 
 static void collision(unit *a,unit *b){
+    if(a->hp<=0||b->hp<=0) return;
     if(a->weight==-1){
         if(b->weight!=-1){
             QPointF d=a->position-b->position;
@@ -51,7 +52,11 @@ GameHoder::~GameHoder(){
     delete gameClock;
     while(!morgue.empty()){
         delete morgue.begin();
-        morgue.erase(morgue.begin());
+        morgue.pop_front();
+    }
+    while(!waitingTarget.empty()){
+        delete waitingTarget.begin();
+        waitingTarget.pop_front();
     }
 }
 void GameHoder::startGame(int difficulty,int _warFog){

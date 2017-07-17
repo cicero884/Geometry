@@ -19,7 +19,7 @@ QGraphicsEffect *FactionColor(int faction);
 
 QGraphicsTextItem *Text(QPointF position,QSize size,int font,QString word,QColor color=QColor(0,0,0));
 QGraphicsLineItem *DashDotDotLine(QPointF a,QPointF b,QString color="blue",qreal width=10);
-QGraphicsPixmapItem *P_background(QPointF position=QPointF(0,0),QSize size=QSize(1600,900),QPointF offset=QPointF(0,0));
+QGraphicsPixmapItem *P_background(QPointF position=QPointF(0,0),QSize size=QSize(1600,900),QPointF offset=QPointF(0,0),QString background_color="white",QString line_color="");
 QGraphicsPixmapItem *P_block(QPointF position,QSize size,QPointF offset);
 QGraphicsPixmapItem *P_circle(QPointF position,QSize size,int faction,QPointF offset);
 QGraphicsPixmapItem *P_cross(QPointF position,QSize size,int faction,QPointF offset);

@@ -1,14 +1,22 @@
 #include "war_fog.h"
 
-war_fog::war_fog(QPointF _position)
-    :object(_position,QSize((1+qreal(qrand())/RAND_MAX)*10,(1+qreal(qrand())/RAND_MAX)*10)){
+extern QMap<QString,unit*> Minions;
 
-    switch(qrand()%3){
-    case 0:image.push_back(P_circle(position,diameter,-2));break;
-    case 1:image.push_back(P_circle(position,diameter,-3));break;
-    case 2:image.push_back(P_circle(position,diameter,0));break;
-    }
+war_fog::war_fog(QPixmap *background_image, QColor fog_color){
+    background=new QPainter();
+    fog=new QGraphicsRectItem(0,0,1600,900);
+    background->drawPixmap(0,0,2000,900,background_image);
+    background->setClipRegion();
+    fog
+}
+war_fog::~war_fog(){
+    delete background;
+    delete fog;
+}
 
+
+/*
+    :object(QPointF(0,0),QSize(1600,900)){
     image.back()->setZValue(30);
 }
 

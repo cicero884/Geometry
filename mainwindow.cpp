@@ -26,20 +26,3 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event){
 void MainWindow::setScene(QGraphicsScene *next){
     ui->graphicsView->setScene(next);
 }
-/*
-void MainWindow::mousePressEvent(QMouseEvent *e){
-    std::cerr<<e->x()<<" "<<e->y()<<"\n";
-    emit mousePressed(e);
-    return;
-}
-void MainWindow::mouseMoveEvent(QMouseEvent *e){
-    std::cerr<<"mouse moved!\n";
-    emit mouseMoved(e);
-    return;
-}
-void MainWindow::mouseReleaseEvent(QMouseEvent *event){
-    std::cerr<<event->x()<<"-"<<event->y()<<"\n";
-    emit mouseReleased(event);
-    return;
-}
-*/

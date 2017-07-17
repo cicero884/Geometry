@@ -25,6 +25,7 @@ void initialize(){
     Colors["d_gray"]=QColor(128,128,128);
     Colors["l_gray"]=QColor(179,179,179);
     Colors["ll_gray"]=QColor(200,200,200);
+    Colors["lll_gray"]=QColor(230,230,230);
     Colors["blue"]=QColor(128,212,255);
     Colors["red"]=QColor(255,128,128);
     Colors["yellow"]=QColor(255,255,128);
